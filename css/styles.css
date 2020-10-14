@@ -20,6 +20,7 @@
     /* Style the logo in the navigation bar */
     .nav-bar a.logo {
       color: steelblue;
+      color:#037ffc;
       font-size: 25px;
       font-weight: bold;
       font-family: Helvetica, sans-serif;
