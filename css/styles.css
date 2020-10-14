@@ -4,31 +4,33 @@
 
   body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
   }
 
-  .navbar {
+  /* Style the navigation bar */
+  .nav-bar {
       overflow: hidden;
-      background-color:black;
+      background-color:ghostwhite;
       opacity:100%;
       position: fixed;
       top: 0;
       width: 100%;
     }
 
-    /* Style the logo link */
-    .navbar a.logo {
+    /* Style the logo in the navigation bar */
+    .nav-bar a.logo {
+      color: steelblue;
       color:#037ffc;
       font-size: 25px;
       font-weight: bold;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: Helvetica, sans-serif;
     }
 
-    /* Links inside the navbar */
-    .navbar a {
+    /* Style the links in the navigation bar */
+    .nav-bar a {
       float: left;
       display: block;
-      color: white;
+      color: steelblue;
       text-align: center;
       padding: 20px 20px;
       text-decoration: none;
@@ -36,29 +38,28 @@
       line-height: 20px;
     }
 
-    /* Change background on mouse-over */
-    .navbar a:hover {
-      background: #ddd;
+    /* Changes when hovering over elements in the navigation bar */
+    .nav-bar a:hover {
+      background: gainsboro;
       color: black;
     }
 
-
-
     /* Float sections to the right */
-    .navbar-right {
+    .nav-bar-right {
       float: right;
     }
 
 
   .container {
-    padding: 64px;
-    background-color: #ececec;
+    padding: 60px;
+    background-color: gainsboro;
+    color: black;
   }
 
   .container-alternate {
-    padding: 64px;
-    background-color: black;
-    color: white;
+    padding: 60px;
+    background-color: ghostwhite;
+    color: steelblue;
   }
 
   .row:after {
@@ -79,10 +80,37 @@
     padding: 20px;
   }
 
+  .column-33 {
+    flot: left;
+    width: 33%;
+    padding: 10px;
+  }
+
   img {
     display: block;
     height: auto;
     max-width: 100%;
+  }
+
+  .footer{
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+    width: 100%;
+    background-color: ghostwhite;
+    padding: 0px;
+    position: fixed;
+    bottom: 0;
+  }
+
+  .footer a {
+    float: left;
+    display: block;
+    color: steelblue;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 9px;
+    line-height: 10px;
   }
 
   @media screen and (max-width: 1000px) {
