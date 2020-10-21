@@ -1,7 +1,8 @@
+ /* Allows to include the padding and border in an element's total width and height.*/
 * {
     box-sizing:border-box;
   }
-
+  
   body {
     margin: auto;
     font-family: Helvetica, sans-serif;
@@ -34,7 +35,7 @@
       color:#037ffc;
       text-align: center;
       padding: 10px 10px;
-      font-size: 18px;
+      font-size: 25px;
       line-height: 10px;
       text-decoration: none;
     }
@@ -49,11 +50,12 @@
     .nav-bar-right {
       float: right;
     }
-
+    /* Changes color of all main headings to the logo color (blue) */
       .heading {
         color:#037ffc;
       }
-
+      
+      /* Order Here button (takes you to the order form) */
       .button {
         background-color:#037ffc;
         border: none;
@@ -104,12 +106,7 @@
     padding: 20px;
   }
 
-  .column-33 {
-    flot: left;
-    width: 33%;
-    padding: 10px;
-  }
-
+  /* style images to be responsive */
   img {
 
     height: auto;
@@ -139,6 +136,10 @@
     max-height:50%;
     float:center;
 }
+
+/*  Contact form based upon w3schools (https://www.w3schools.com/css/css_form.asp)*/
+
+/* style of order form*/
 
 input[type=text], select {
   width: 100%;
@@ -224,6 +225,7 @@ div {
     background-color: ghostwhite;
   }
 
+/* Makes the website responsive for mobile and tablet, stacks the colums on top of eachother with width 100% instead of 60/40 */  
   @media screen and (max-width: 1000px) {
     .column-60,
     .column-40 {
