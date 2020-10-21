@@ -3,7 +3,7 @@
   }
 
   body {
-    margin: 0;
+    margin: auto;
     font-family: Helvetica, sans-serif;
   }
 
@@ -33,14 +33,14 @@
       color:#037ffc;
       text-align: center;
       padding: 20px 20px;
-      text-decoration: none;
       font-size: 18px;
       line-height: 20px;
+      text-decoration: none;
     }
 
     /* Changes when hovering over elements in the navigation bar */
     .nav-bar a:hover {
-      
+
       color:lightblue;
     }
 
@@ -65,7 +65,7 @@
       .button:hover {
         background-color:lightblue;
       }
-    
+
 
   .container {
     padding: 60px;
@@ -140,21 +140,34 @@
     font-family: Helvetica, sans-serif;
     overflow: hidden;
     width: 100%;
-    background-color: ghostwhite;
+    background-color: steelblue;
     padding: 0px;
     position: fixed;
     bottom: 0;
   }
 
-  .footer a {
+  .foot-bar a {
     float: left;
     display: block;
-    color: steelblue;
+    color: ghostwhite;
     text-align: center;
     padding: 20px 20px;
-    text-decoration: none;
-    font-size: 9px;
+    font-size: 14px;
     line-height: 10px;
+  }
+
+  .foot-bar-social-media {
+    float: right;
+  }
+
+  .foot-bar-social-media img {
+    width: 20px;
+    height: 20px;
+    background-color: steelblue;
+  }
+
+  .foot-bar-social-media img:hover {
+    background-color: ghostwhite;
   }
 
   @media screen and (max-width: 1000px) {
