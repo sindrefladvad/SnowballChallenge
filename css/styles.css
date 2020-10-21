@@ -8,18 +8,20 @@
     font-family: Helvetica, sans-serif;
   }
 
+  /* NAVIGATION BAR - inspiration from https://www.w3schools.com/howto/howto_css_topnav_right.asp &
+  https://www.w3schools.com/howto/howto_js_navbar_sticky.asp */
+
   /* Style the navigation bar */
   .nav-bar {
-      overflow: hidden;
-      background-color:ghostwhite;
-      opacity:100%;
       position: fixed;
       top: 0;
       width: 100%;
+      overflow: hidden;
+      background-color:ghostwhite;
     }
 
     /* Style the logo in the navigation bar */
-    .nav-bar a.logo {
+    .nav-bar a.carboncapture {
       color: steelblue;
       color:#037ffc;
       font-size: 35px;
@@ -50,6 +52,26 @@
     .nav-bar-right {
       float: right;
     }
+
+    @media screen and (max-width: 1000px) {
+      .nav-bar a
+       {
+        width: 0%;
+        font-size: 0px;
+        padding: 0;
+
+
+      }
+      .nav-bar a.carboncapture {
+        padding-top: 10px;
+
+      }
+      img {
+        margin: auto;
+      }
+    }
+
+
     /* Changes color of all main headings to the logo color (blue) */
       .heading {
         color:#037ffc;
