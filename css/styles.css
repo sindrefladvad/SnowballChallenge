@@ -21,7 +21,8 @@
     .nav-bar a.logo {
       color: steelblue;
       color:#037ffc;
-      font-size: 25px;
+      font-size: 35px;
+      display:block;
       font-weight: bold;
       font-family: Helvetica, sans-serif;
     }
@@ -32,22 +33,26 @@
       display:block;
       color:#037ffc;
       text-align: center;
-      padding: 20px 20px;
+      padding: 10px 10px;
       font-size: 18px;
-      line-height: 20px;
+      line-height: 10px;
       text-decoration: none;
     }
 
     /* Changes when hovering over elements in the navigation bar */
     .nav-bar a:hover {
 
-      color:lightblue;
+      color:lightskyblue;
     }
 
     /* Float sections to the right */
     .nav-bar-right {
       float: right;
     }
+
+      .heading {
+        color:#037ffc;
+      }
 
       .button {
         background-color:#037ffc;
@@ -135,15 +140,64 @@
     float:center;
 }
 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #037ffc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:lightskyblue;
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
+}
+
 
   .footer{
     font-family: Helvetica, sans-serif;
     overflow: hidden;
     width: 100%;
-    background-color: steelblue;
+    background-color:ghostwhite;
     padding: 0px;
-    position: fixed;
+    position: bottom;
     bottom: 0;
+  }
+
+  .adress {
+    width: 40%;
+    float: left;
+    display: block;
+    font-size: 14px;
+    padding: 20px 20px;
   }
 
   .foot-bar a {
